@@ -5,8 +5,6 @@ We will introduce basic Python data types, the assignment operator, and how to o
 
  ## History of Python
 
-Yes, your information about the origin of Python is correct. Here's a more detailed history:
-
 **Late 1980s: The Birth of Python**
 - Python was conceived by Guido van Rossum in the late 1980s.
 - Guido van Rossum started working on the implementation of Python at the Centrum Wiskunde & Informatica (CWI) in the Netherlands in December 1989.
@@ -30,4 +28,10 @@ Yes, your information about the origin of Python is correct. Here's a more detai
 - The Python Software Foundation (PSF) oversees the development of Python and supports the language's community and infrastructure.
 
 Throughout its history, Python has evolved into a powerful and versatile programming language, known for its simplicity, readability, and extensive standard library. The language's community-driven development model and open-source nature have played crucial roles in its success and widespread adoption.
+
+# What is Python? 
+**Flexible programming Language**
+**Design to be human readable**
+
+
 
