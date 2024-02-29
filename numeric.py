@@ -1,3 +1,5 @@
+#Data type - Numeric 
+
 # Integer
 age = 24
 quantity = -7
@@ -28,3 +30,4 @@ print("\nComplex Type:")
 print("Complex Number 1:", z1)
 print("Complex Number 2:", z2)
 print("Complex Result:", complex_result)
+
