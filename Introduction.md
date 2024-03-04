@@ -108,6 +108,75 @@ print("Division:", division_result)
 
 In this example, `float1`, `float2`, and `float3` are floating-point numbers, and the program performs basic arithmetic operations with them. The results, `sum_result`, `product_result`, and `division_result`, will all be floating-point numbers.
 
+# Arithmetic Operators
+
+Python supports various arithmetic operators that allow you to perform basic mathematical operations on numbers. Here are the common arithmetic operators in Python:
+
+1. **Addition (`+`):**
+   - Example: `a + b`
+   - Adds two numbers.
+
+2. **Subtraction (`-`):**
+   - Example: `a - b`
+   - Subtracts the second number from the first.
+
+3. **Multiplication (`*`):**
+   - Example: `a * b`
+   - Multiplies two numbers.
+
+4. **Division (`/`):**
+   - Example: `a / b`
+   - Divides the first number by the second. The result is a float even if the numbers are integers.
+
+5. **Floor Division (`//`):**
+   - Example: `a // b`
+   - Divides the first number by the second and returns the largest integer less than or equal to the result.
+
+6. **Modulus (`%`):**
+   - Example: `a % b`
+   - Returns the remainder when the first number is divided by the second.
+
+7. **Exponentiation (`**` or `pow()` function):**
+   - Example: `a ** b` or `pow(a, b)`
+   - Raises the first number to the power of the second.
+
+Here's a brief example in Python:
+
+```python
+a = 10
+b = 3
+
+# Addition
+result_addition = a + b
+print("Addition:", result_addition)
+
+# Subtraction
+result_subtraction = a - b
+print("Subtraction:", result_subtraction)
+
+# Multiplication
+result_multiplication = a * b
+print("Multiplication:", result_multiplication)
+
+# Division
+result_division = a / b
+print("Division:", result_division)
+
+# Floor Division
+result_floor_division = a // b
+print("Floor Division:", result_floor_division)
+
+# Modulus
+result_modulus = a % b
+print("Modulus:", result_modulus)
+
+# Exponentiation
+result_exponentiation = a ** b
+print("Exponentiation:", result_exponentiation)
+```
+
+This script demonstrates the use of these operators with the values of `a` and `b`. Remember to handle division carefully, especially if you want integer division or if you are working with floats and want to manage precision.
+
 
 
 
