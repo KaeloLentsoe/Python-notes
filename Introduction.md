@@ -74,8 +74,42 @@ print("Division:", division_result)
 In this example, `integer1`, `integer2`, and `integer3` are integers, and the program performs basic arithmetic operations with them. The results, `sum_result`, `product_result`, and `division_result`, will all be integers as well.
 
 - # **Float**
+The `float` data type, short for floating-point, is used to represent numbers that can have fractional or decimal parts. Floats are versatile and can represent a wide range of real numbers, including both integers and values with decimal points. Examples of floating-point numbers include 1.3, -3.14, and 300.345567, as you mentioned.
+
+Here are some key characteristics and properties of floating-point numbers:
+
+1. **Decimal Point:** Floating-point numbers have digits to the right of the decimal point, allowing them to represent values that are not whole numbers. The decimal point can appear anywhere in the number.
+
+2. **Positive and Negative Values:** Like integers, floating-point numbers can be both positive and negative. For instance, 1.3 and -3.14 are examples of positive and negative floating-point numbers, respectively.
+
+3. **Scientific Notation:** Floating-point numbers can be expressed in scientific notation, especially when dealing with very large or very small values. For example, 3.0e8 represents 3.0 multiplied by 10 to the power of 8.
+
+4. **Precision Limitations:** Due to the way floating-point numbers are represented in computers, there can be limitations in precision. Some values may not be exactly representable, leading to rounding errors. This can result in issues when comparing floating-point numbers for equality.
+
+5. **Arithmetic Operations:** Floating-point numbers support standard arithmetic operations, including addition, subtraction, multiplication, and division. However, it's important to be aware of precision issues, especially when performing multiple operations.
+
+Example Python code snippet demonstrating the `float` data type:
+
+```python
+# Float examples
+float1 = 1.3
+float2 = -3.14
+float3 = 300.345567
+
+# Arithmetic operations
+sum_result = float1 + float2
+product_result = float2 * float3
+division_result = float3 / float1
+
+print("Sum:", sum_result)
+print("Product:", product_result)
+print("Division:", division_result)
+```
+
+In this example, `float1`, `float2`, and `float3` are floating-point numbers, and the program performs basic arithmetic operations with them. The results, `sum_result`, `product_result`, and `division_result`, will all be floating-point numbers.
 
 
 
 
 
+ 
