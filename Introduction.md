@@ -33,6 +33,13 @@ Throughout its history, Python has evolved into a powerful and versatile program
 - **Flexible programming Language**
 - **Design to be human readable**
 
+# Data Types: int and float
+
+Programming languages must distinguish between different types of data. 
+There are two types to data types that we will explore. 
+
+- # **Int**
+
 
 
 
