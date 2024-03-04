@@ -36,7 +36,7 @@ Throughout its history, Python has evolved into a powerful and versatile program
 # Data Types: int and float
 
 Programming languages must distinguish between different types of data. 
-There are tow numerical data types: int and float found in Python programming language. 
+There are two numerical data types: int and float found in Python programming language. 
 
 - # **Int**
 The `int` data type, short for integer, is used to represent whole numbers without any fractional or decimal parts. Integers can be positive, negative, or zero. Examples of integers include -10, 0, and 357.
@@ -72,6 +72,8 @@ print("Division:", division_result)
 ```
 
 In this example, `integer1`, `integer2`, and `integer3` are integers, and the program performs basic arithmetic operations with them. The results, `sum_result`, `product_result`, and `division_result`, will all be integers as well.
+
+- # **Float**
 
 
 
