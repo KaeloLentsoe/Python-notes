@@ -178,7 +178,42 @@ print("Exponentiation:", result_exponentiation)
 This script demonstrates the use of these operators with the values of `a` and `b`. Remember to handle division carefully, especially if you want integer division or if you are working with floats and want to manage precision.
 
 
+# Arithmetic Operator Precedence
+In Python, arithmetic operators follow a certain precedence order, determining the sequence in which operations are performed when an expression involves multiple operators. Here is the precedence order from highest to lowest:
 
+1. **Parentheses `()`** - Highest precedence
+   - Parentheses can be used to explicitly specify the order of operations. Expressions within parentheses are evaluated first.
+
+2. **Exponentiation `**`**
+   - Exponentiation has the second-highest precedence. It raises the left operand to the power of the right operand.
+
+3. **Positive `+` and Negative `-` (Unary Operators)**
+   - These operators perform unary operations on a single operand. They have higher precedence than most binary operators.
+
+4. **Multiplication `*`, Division `/`, Floor Division `//`, and Modulus `%`**
+   - These operators have the same level of precedence and are evaluated from left to right.
+
+5. **Addition `+` and Subtraction `-`**
+   - Addition and subtraction have the same level of precedence and are evaluated from left to right.
+
+Here's a quick example demonstrating operator precedence:
+
+```python
+result = 2 + 3 * 4 ** 2 - (8 / 2)
+print(result)
+```
+
+Here's how the expression is evaluated following operator precedence:
+
+1. `4 ** 2` is evaluated first (exponentiation), resulting in 16.
+2. `3 * 16` is then evaluated (multiplication), resulting in 48.
+3. `8 / 2` is evaluated next (division), resulting in 4.
+4. The expression inside the parentheses `(8 / 2)` is subtracted from the result of `3 * 16`.
+5. Finally, `2 + (48 - 4)` is calculated, resulting in the final value, which is printed.
+
+Understanding operator precedence is crucial for writing accurate and predictable expressions in Python. If in doubt, you can always use parentheses to explicitly specify the order of operations and improve code readability.
+
+# Syntax and Semantics
 
 
  
