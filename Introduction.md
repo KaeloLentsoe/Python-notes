@@ -30,8 +30,10 @@ We will introduce basic Python data types, the assignment operator, and how to o
 Throughout its history, Python has evolved into a powerful and versatile programming language, known for its simplicity, readability, and extensive standard library. The language's community-driven development model and open-source nature have played crucial roles in its success and widespread adoption.
 
 # What is Python? 
-**Flexible programming Language**
-**Design to be human readable**
+- **Flexible programming Language**
+- **Design to be human readable**
+
+
 
 
 
