@@ -36,9 +36,42 @@ Throughout its history, Python has evolved into a powerful and versatile program
 # Data Types: int and float
 
 Programming languages must distinguish between different types of data. 
-There are two types to data types that we will explore. 
+There are tow numerical data types: int and float found in Python programming language. 
 
 - # **Int**
+The `int` data type, short for integer, is used to represent whole numbers without any fractional or decimal parts. Integers can be positive, negative, or zero. Examples of integers include -10, 0, and 357.
+
+Here are some key characteristics and properties of integers:
+
+1. **No Decimal Part:** Integers do not have any digits to the right of the decimal point. They are whole numbers, and any fractional or decimal part is truncated or discarded.
+
+2. **Positive and Negative Values:** Integers can be positive or negative. For example, 10 and -10 are both integers.
+
+3. **Zero is an Integer:** The number zero (0) is also considered an integer. It is neither positive nor negative.
+
+4. **No Size Limitation:** In many programming languages, the `int` data type is designed to handle a wide range of integer values. However, there might be limitations based on the specific programming language and system architecture.
+
+5. **Arithmetic Operations:** Integers support standard arithmetic operations such as addition, subtraction, multiplication, and division. When you perform these operations with integers, the result is always an integer (except for division, where the result may be a floating-point number if the division is not exact).
+
+Example Python code snippet demonstrating the `int` data type:
+
+```python
+# Integer examples
+integer1 = -10
+integer2 = 0
+integer3 = 357
+
+# Arithmetic operations
+sum_result = integer1 + integer2
+product_result = integer2 * integer3
+division_result = integer3 / integer1
+
+print("Sum:", sum_result)
+print("Product:", product_result)
+print("Division:", division_result)
+```
+
+In this example, `integer1`, `integer2`, and `integer3` are integers, and the program performs basic arithmetic operations with them. The results, `sum_result`, `product_result`, and `division_result`, will all be integers as well.
 
 
 
