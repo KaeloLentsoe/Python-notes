@@ -119,3 +119,6 @@ Choosing meaningful and descriptive variable names is an important aspect of wri
    ```
 
 By following these guidelines, you can create Python code that is more readable, maintainable, and easier to understand for both yourself and others who may work with your code.
+
+# Note about syntax
+
