@@ -279,3 +279,34 @@ Naming conventions in Python are guidelines that help developers choose meaningf
     - Example: Instead of `i`, use `index` or `item`.
 
 Adhering to these naming conventions fosters consistency across projects and makes code more accessible to others. It's important to note that while these conventions are widely accepted, there might be cases where specific projects or teams have their own variations or additional guidelines. Following PEP 8 and maintaining consistency within a project are key aspects of writing clean and readable Python code.
+
+# Names to Avoid
+
+In Python, there are certain names that should be avoided as variable names because they have special meanings or serve specific purposes in the language. Using these reserved words as identifiers for your variables or other objects can lead to confusion and unexpected behavior. Here are some categories of names to avoid:
+
+1. **Keywords:**
+   - Python has a set of reserved words, also known as keywords, that have predefined meanings in the language. These keywords cannot be used as variable names or identifiers. Examples include `if`, `else`, `while`, `for`, `import`, `True`, `False`, `None`, and many more.
+   - Example: Avoid using `if` or `else` as variable names.
+
+2. **Built-in Functions:**
+   - Python comes with a set of built-in functions that perform common operations. It's advisable not to use the names of these functions as variable names to prevent confusion and potential errors.
+   - Example: Avoid using names like `print`, `len`, `sum`, etc.
+
+3. **Standard Library Modules:**
+   - Python has a rich standard library with numerous modules that provide additional functionality. Avoid using names of these modules as variable names to prevent conflicts with the module names.
+   - Example: Avoid using names like `math`, `random`, `datetime`, etc.
+
+4. **Single and Double Underscores:**
+   - Names starting with a single underscore `_` are, by convention, considered weak "internal use" variables. They are meant for internal use within a module and may change without notice.
+   - Names starting and ending with double underscores `__` are used for name mangling and have specific meanings in the context of classes.
+   - Avoid using these patterns for your variable names unless you understand their conventions and purposes.
+
+5. **Class Names:**
+   - While it's common to use CamelCase for class names, it's recommended to avoid using the names of built-in classes in Python, such as `list`, `tuple`, or `dict`, as variable names to prevent confusion.
+   - Example: Avoid using `list` as a variable name.
+
+6. **Global Constants:**
+   - Some names are conventionally used for global constants, and it's a good practice not to use them for other purposes to avoid confusion.
+   - Example: Avoid using names like `PI` or `MAX_SIZE` for variables unless they are constants in your code.
+
+It's essential to be aware of these reserved words and naming conventions to write clean, readable, and error-free Python code. Adhering to best practices ensures that your code is less prone to unexpected behavior and is more maintainable for both you and others who may work with or review your code.
