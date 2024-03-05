@@ -160,3 +160,33 @@ As of my last knowledge update in January 2022, here's a brief overview of some 
    - `as`: Used for creating an alias when importing modules or renaming variables
 
 To get an up-to-date and comprehensive list of Python keywords, you can refer to the official Python Language Reference documentation. As mentioned in your question, section 2.3.1 of the Python Language Reference provides the list of keywords specific to the version you are using. It's always a good practice to check the official documentation for the most accurate and current information.
+
+# Syntax and Semantic Errors
+The provided content discusses two categories of errors in Python: syntax errors and semantic errors.
+
+1. **Syntax Errors:**
+   - **Definition:** Syntax errors occur when you write expressions or statements that do not follow Python's syntax rules.
+   - **Example:** The content provides an example of a syntax error: `13 = age`. This is incorrect because an assignment statement must have a variable on the left-hand side (LHS) of the assignment operator "=".
+   - **Explanation:** Python checks the syntax of your code during the parsing phase and raises a syntax error if it encounters statements or expressions that do not conform to the language's syntax rules.
+
+2. **Semantic Errors:**
+   - **Definition:** Semantic errors occur when the Python interpreter cannot evaluate expressions or execute statements because they lack a meaningful association or context.
+   - **Example:** The content provides an example of a semantic error: `age + 1`. This expression is well-formed but has meaning only when `age` is already assigned a value. If evaluated before assigning a value to `age`, Python raises a semantic error.
+   - **Explanation:** Semantic errors are not caught during the parsing phase but rather during runtime. They indicate logical mistakes in the program, such as trying to perform operations on variables before they are properly initialized.
+
+Regarding assignments in Python:
+
+- **Types of Expressions in Assignments:**
+   - Assignments are not confined to numerical types; they can involve expressions built from any defined type.
+   - The content mentions that assignments involving strings are demonstrated in a video. Strings, along with numerical types, are commonly used in assignments.
+
+- **Python's Basic Types:**
+   - The content refers to a table summarizing Python's basic types. While the specific table is not provided here, it likely includes common types such as integers, floats, strings, lists, tuples, sets, dictionaries, and boolean values.
+
+- **Execution of Assignment Statements Involving Strings:**
+   - The video mentioned demonstrates the execution of assignment statements involving strings. It might showcase how variables can be assigned string values, and it introduces commonly used operators on strings.
+
+- **Behavior in Python Shell vs. Programming Environments:**
+   - The content notes a difference in behavior between the Python shell in the video and most Python programming environments. In the video's Python shell, "=> None" is displayed after assignment statements, but this behavior may vary in other environments. This is likely due to version differences in the Python environments used.
+
+In summary, the content emphasizes the importance of understanding syntax and semantics in Python programming, provides examples of syntax and semantic errors, and hints at the versatility of assignments involving various data types, including strings. The mentioned video likely supplements the material by demonstrating practical examples in a Python shell.
