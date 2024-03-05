@@ -310,3 +310,61 @@ In Python, there are certain names that should be avoided as variable names beca
    - Example: Avoid using names like `PI` or `MAX_SIZE` for variables unless they are constants in your code.
 
 It's essential to be aware of these reserved words and naming conventions to write clean, readable, and error-free Python code. Adhering to best practices ensures that your code is less prone to unexpected behavior and is more maintainable for both you and others who may work with or review your code.
+
+# Reserved Words
+
+In Python, reserved words are also known as keywords. These are words that have special meanings within the language and cannot be used as identifiers (such as variable names, function names, or class names). Attempting to use a reserved word as an identifier will result in a syntax error. As of my last knowledge update in January 2022, here is a list of Python keywords:
+
+```python
+False      await      else       import     pass
+None       break      except     in         raise
+True       class      finally    is         return
+and        continue   for        lambda     try
+as         def        from       nonlocal   while
+assert     del        global     not        with
+async      elif       if         or         yield
+```
+
+These keywords play essential roles in defining the structure and behavior of Python programs. A brief explanation of some of these keywords:
+
+- `False`, `True`, `None`: Boolean literals representing false, true, and null values.
+- `and`, `or`, `not`: Logical operators for boolean expressions.
+- `if`, `else`, `elif`: Conditional statements.
+- `while`, `for`: Looping constructs.
+- `break`, `continue`: Used within loops for control flow.
+- `def`: Used to define functions.
+- `class`: Used to define classes.
+- `try`, `except`, `finally`: Used for exception handling.
+- `return`, `yield`: Used to return values from functions and generators.
+- `import`, `from`, `as`: Used for importing modules and creating aliases.
+- `with`: Used for context management.
+- `lambda`: Used to create anonymous (inline) functions.
+- `global`, `nonlocal`: Used for variable scoping.
+- `async`, `await`: Used in asynchronous programming.
+
+It's crucial to avoid using these words as identifiers to prevent conflicts with the language's syntax and behavior. Additionally, following naming conventions and being aware of the context in which these keywords are used enhances code clarity and maintainability. If you want the most up-to-date list, you can always refer to the official Python documentation or use the `keyword` module in Python.
+
+# Built-in Function Names
+
+In Python, there are several built-in functions that are part of the standard library. These functions provide essential functionalities and are always available without the need for importing any specific modules. While it's generally advisable not to use the names of these built-in functions as variable names to avoid conflicts and confusion, it's essential to be aware of them for effective programming. As of my last knowledge update in January 2022, here is a list of some commonly used built-in functions in Python:
+
+```python
+abs()       delattr()   hash()      memoryview() set()
+all()       dict()      help()      min()        setattr()
+any()       dir()       hex()       next()       slice()
+ascii()     divmod()    id()        object()     sorted()
+bin()       enumerate() input()     oct()        staticmethod()
+bool()      eval()      int()       open()       str()
+breakpoint()   exec()   isinstance() ord()        sum()
+bytearray()    filter()  issubclass() pow()       super()
+bytes()        float()   iter()      print()      tuple()
+callable()     format()  len()       property()   type()
+chr()          frozenset()   list()   range()      vars()
+classmethod()  getattr()    locals() repr()       zip()
+compile()      globals()    map()    reversed()   __import__()
+complex()      hasattr()    max()    round()
+```
+
+These functions cover a wide range of operations, including mathematical computations, type conversions, input/output, iteration, and more. While the list provided here includes many built-in functions, it's not exhaustive, and Python has additional built-in functions for various purposes.
+
+It's good practice to choose variable names that are descriptive and don't conflict with these built-in functions to avoid unexpected behavior in your code. If you are unsure whether a name you want to use is a built-in function, you can consult the official Python documentation or use the `help()` function in the Python interpreter to get information about a specific function.
