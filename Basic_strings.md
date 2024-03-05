@@ -79,6 +79,8 @@ In Python, strings are sequences of characters, and they are used to represent t
 
 These basics cover the fundamental concepts of working with strings in Python. Strings are versatile and play a crucial role in many programming tasks, including text processing, data manipulation, and user interactions.
 
+
+
 # What can I do with strings in Python?
 
 
