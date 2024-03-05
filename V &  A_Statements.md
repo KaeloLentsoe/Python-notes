@@ -231,3 +231,51 @@ In Python, expressions and assignments are fundamental concepts, and understandi
      - Assignments: `x = 5`, `name = "John"`, `result = x + 3`
    
 Understanding the distinction between expressions and assignments is essential for writing code that performs desired computations and manipulations of data. Assignments create a way to store and reuse values, while expressions provide the means to perform operations and computations on those values. Combining both effectively allows for the creation of complex and meaningful programs in Python.
+
+
+# Naming Conventions
+
+Naming conventions in Python are guidelines that help developers choose meaningful and consistent names for variables, functions, classes, and other identifiers in their code. Adhering to these conventions improves code readability and maintainability, making it easier for both the original developer and others to understand the code. Here are some commonly followed naming conventions in Python:
+
+1. **PEP 8:**
+   - The Python Enhancement Proposal 8 (PEP 8) is the style guide for Python code. It provides recommendations on naming conventions, indentation, and other aspects of code style.
+   - PEP 8 suggests using lowercase letters for variable names and functions, and underscores to separate words (snake_case).
+   - Example: `my_variable, calculate_result()`
+
+2. **Constants:**
+   - Constants, which are variables with values that do not change, are typically named using uppercase letters with underscores to separate words.
+   - Example: `MAX_SIZE, PI`
+
+3. **Classes:**
+   - Class names should follow the CapWords convention, also known as CamelCase, where the first letter of each word is capitalized.
+   - Example: `MyClass, CarModel`
+
+4. **Modules:**
+   - Module names should be lowercase with underscores if needed. They should be short and descriptive, conveying the purpose of the module.
+   - Example: `my_module.py`
+
+5. **Functions and Methods:**
+   - Function and method names should be in lowercase with underscores (snake_case) for improved readability.
+   - Example: `calculate_area(), process_data()`
+
+6. **Variables:**
+   - Variable names should be lowercase with underscores, following the snake_case convention.
+   - Example: `user_age, total_count`
+
+7. **Private Variables and Methods:**
+   - If an identifier is intended to be private (not to be accessed outside its class or module), it should begin with a single underscore.
+   - Example: `_internal_variable, _private_method()`
+
+8. **Double Leading Underscores:**
+   - Names that start and end with double underscores are used for name mangling in classes. They are used to make an attribute or method more challenging to be accidentally overridden in subclasses.
+   - Example: `__hidden_attribute, __secret_method()`
+
+9. **Single Leading Underscore:**
+   - A single leading underscore is a convention that indicates a weak "internal use" variable or method. It's a hint for other developers that the identifier is intended for internal use and might change without notice.
+   - Example: `_internal_use_variable, _internal_use_function()`
+
+10. **Avoid One-Character Names:**
+    - Descriptive names are encouraged. Avoid using single-character names for variables unless they represent loop indices.
+    - Example: Instead of `i`, use `index` or `item`.
+
+Adhering to these naming conventions fosters consistency across projects and makes code more accessible to others. It's important to note that while these conventions are widely accepted, there might be cases where specific projects or teams have their own variations or additional guidelines. Following PEP 8 and maintaining consistency within a project are key aspects of writing clean and readable Python code.
