@@ -228,3 +228,60 @@ In the example above, `result` will be `False` because the first condition `(x >
 Understanding and effectively using relational and logical operators are essential skills for writing conditional statements and controlling the flow of a program. They are commonly used in constructs like `if` statements, loops, and more to make decisions based on certain conditions.
 
 
+
+# Operator Precedence Summary:
+
+Let's expand on the summary of operator precedence, ordered from the highest to the lowest, encompassing arithmetic, relational, and logical operators.
+
+1. **Parentheses `( )`:**
+   - Highest precedence.
+   - Anything enclosed in parentheses is evaluated first.
+
+2. **Exponentiation `**`:**
+   - Evaluates the power of a number.
+   - Example: `2 ** 3` means 2 raised to the power of 3.
+
+3. **Multiplication `*`, Division `/`, Floor division `//`, Modulus `%`:**
+   - These arithmetic operators have the same level of precedence.
+   - They are evaluated from left to right.
+   - Example: `2 * 3 / 4` is equivalent to `(2 * 3) / 4`.
+
+4. **Addition `+`, Subtraction `-`:**
+   - These arithmetic operators have the same level of precedence.
+   - They are evaluated from left to right.
+   - Example: `5 + 2 - 1` is equivalent to `(5 + 2) - 1`.
+
+5. **Relational Operators `<, >, <=, >=, ==, !=`:**
+   - Used to compare values.
+   - Example: `x > 10` checks if the value of `x` is greater than 10.
+
+6. **Logical NOT `not`:**
+   - Unary operator with higher precedence.
+   - Example: `not (x > 10)` checks if the value of `x` is not greater than 10.
+
+7. **Logical AND `and`:**
+   - Connects two conditions, returning `True` only if both conditions are true.
+   - Example: `(x > 5) and (y < 8)` checks if both conditions are true.
+
+8. **Logical OR `or`:**
+   - Connects two conditions, returning `True` if at least one condition is true.
+   - Example: `(x == 0) or (y == 0)` checks if either condition is true.
+
+9. **Assignment `=`:**
+   - Lowest precedence among the operators listed.
+   - Used for variable assignment.
+   - Example: `result = x + y` assigns the value of `x + y` to the variable `result`.
+
+### Using Parentheses for Explicit Precedence:
+
+While operator precedence rules determine the default order of operations, it's often a good practice to use parentheses to explicitly specify the desired order. This not only makes the code more readable but also avoids any ambiguity.
+
+```python
+result = (a + b) * c - (d ** 2)  # Explicit use of parentheses
+```
+
+In the expression above, parentheses ensure that addition and subtraction are performed before multiplication and exponentiation, respectively.
+
+Understanding and correctly applying operator precedence is crucial for writing accurate and predictable code in programming languages. Regularly referencing the precedence rules helps avoid errors and ensures the intended order of operations in complex expressions.
+
+
