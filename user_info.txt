@@ -1,0 +1,2 @@
+Bond: Principal: 60000.0, Interest Rate: 0.003541666666666667, Months: 24.0
+Investment: Principal: 2000.0, Interest Rate: 0.011666666666666667, Time: 36.0, Type: compound 
