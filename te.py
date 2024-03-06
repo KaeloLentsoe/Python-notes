@@ -1,3 +1,9 @@
-x=90
-z='hello'
-print(x,z)
+a=2
+b=3
+print(a==b)
+print(a!=b)
+print(a>=b)
+print(a>=a)
+print(a<=a)
+print(a>b)
+print(a < b) 
