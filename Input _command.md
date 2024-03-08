@@ -318,7 +318,7 @@ This program uses a `while` loop to repeatedly prompt the user for input until t
 
 These examples illustrate the basic use of `for` and `while` loops in Python. Loops are powerful constructs that allow you to efficiently repeat code, and they play a crucial role in many programming tasks.
 
-## More example
+## More examples
 
 Sure, let's delve into a more practical example using a `for` loop to calculate the factorial of a number and a `while` loop to create a simple guessing game.
 
