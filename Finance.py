@@ -1,22 +1,78 @@
 import math
+import datetime
+import os
 
 class Financial_Calculator:
     def __init__(self):
+        self.users = {}
+        self.current_user = None
         self.user_info = {}
 
-    def get_input(self, prompt, data_type):
-        while True:
-            try:
-                user_input = data_type(input(prompt))
-                return user_input
-            except ValueError:
-                print("Error: Please enter the required info in the input field.")
+    def load_users_data(self):
+        if os.path.exists("users_data.txt"):
+            with open("users_data.txt", "r") as users_file:
+                lines = users_file.readlines()
+                for i in range(0, len(lines), 2):
+                    username = lines[i].strip()
+                    password = lines[i + 1].strip()
+                    self.users[username] = password
 
-    def save_user_info(self, user_type, details):
-        with open("user_info.txt", "a") as file:
-            file.write(f"{user_type.capitalize()} Details:\n")
-            for key, value in details.items():
-                file.write(f"{key}: {value}\n")
+    def save_users_data(self):
+        with open("users_data.txt", "w") as users_file:
+            for username, password in self.users.items():
+                users_file.write(f"{username}\n{password}\n")
+
+    def register_user(self):
+        username = input("Enter your username: ")
+
+        while True:
+            password = input("Enter your password (at least 8 characters with one uppercase, one lowercase, and one digit): ")
+            if len(password) >= 8 and any(c.isupper() for c in password) and any(c.islower() for c in password) and any(c.isdigit() for c in password):
+                break
+            else:
+                print("Invalid password. Please make sure it is at least 8 characters long and meets the strength requirements.")
+
+        self.users[username] = password
+        print("Registration successful!")
+        self.save_users_data()
+
+    def login_user(self):
+        username = input("Enter your username: ")
+        password = input("Enter your password: ")
+        if username in self.users and self.users[username] == password:
+            self.current_user = username
+            print(f"Login successful, welcome {username}!")
+            self.load_user_info()
+        else:
+            print("Invalid username or password. Please try again.")
+
+    def load_user_info(self):
+        file_name = f"{self.current_user}_data.txt"
+        if os.path.exists(file_name):
+            with open(file_name, "r") as user_file:
+                lines = user_file.readlines()
+                for line in lines:
+                    key, value = line.strip().split(": ")
+                    nested_key, nested_value = value.split(", ")
+                    self.user_info[key] = {nested_key: float(nested_value)}
+
+    def save_user_info(self):
+        file_name = f"{self.current_user}_data.txt"
+        with open(file_name, "w") as user_file:
+            for key, values in self.user_info.items():
+                user_file.write(f"{key}: {', '.join([f'{k}: {v}' for k, v in values.items()])}\n")
+
+    def log_activity(self, activity):
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        with open("log.txt", "a") as log_file:
+            log_file.write(f"{timestamp} - {self.current_user}: {activity}\n")
+
+    def display_dashboard(self):
+        print(f"\n===== Welcome to the Dashboard, {self.current_user}! =====")
+        print("Choose an option:")
+        print("1. Calculate Investment")
+        print("2. Calculate Bond")
+        print("3. Logout")
 
     def calculate_investment(self):
         p = self.get_input("How much are you depositing? R", float)
@@ -33,6 +89,7 @@ class Financial_Calculator:
         print(f"Your total amount earned over {t} years will be R{total:.2f}")
 
         self.user_info["Investment"] = {"Principal": p, "Interest Rate": r, "Time": t, "Type": simp_comp}
+        self.log_activity("Calculated Investment")
 
     def calculate_bond(self):
         p = self.get_input("What is the current value of the house? R", float)
@@ -46,37 +103,61 @@ class Financial_Calculator:
         print(f"Your total repayment will be R{total_repayment:.2f}")
 
         self.user_info["Bond"] = {"Principal": p, "Interest Rate": i, "Months": n}
+        self.log_activity("Calculated Bond")
+
+    def logout_user(self):
+        self.log_activity("Logged Out")
+        self.save_user_info()
+        self.current_user = None
+        print("Logout successful.")
+
+    def get_input(self, prompt, data_type):
+        while True:
+            try:
+                user_input = data_type(input(prompt))
+                return user_input
+            except ValueError:
+                print("Error: Please enter the required info in the input field.")
 
     def financial_calculator(self):
-        name = input("Please enter your name: ")
-        print(f"Hello, {name} mfowethu! Welcome to the A.O.S Financial Calculator.")
-
+        self.load_users_data()
         while True:
-            invest_or_bond = self.get_input(
-                '''====================
-                Choose either investment or bond from the menu below to proceed:
-                  - [ investment ]
-                  - [ bond ]
-                =====================''',
-                str
-            ).lower()
+            if not self.current_user:
+                print("\n===== Welcome to the Financial Calculator! =====")
+                print("Choose an option:")
+                print("1. Register")
+                print("2. Login")
+                print("3. Exit")
+                choice = input()
 
-            if invest_or_bond == "investment":
-                self.calculate_investment()
-            elif invest_or_bond == "bond":
-                self.calculate_bond()
+                if choice == '1':
+                    self.register_user()
+                elif choice == '2':
+                    self.login_user()
+                elif choice == '3':
+                    print("Exiting the program. Goodbye!")
+                    break
+                else:
+                    print("Invalid choice. Please try again.")
             else:
-                print("Error: Invalid choice. Please choose either 'investment' or 'bond'.")
-                continue
+                self.display_dashboard()
+                choice = input()
+                if choice == '1':
+                    self.calculate_investment()
+                elif choice == '2':
+                    self.calculate_bond()
+                elif choice == '3':
+                    self.logout_user()
+                else:
+                    print("Invalid choice. Please try again.")
 
-            restart = self.get_input("Do you want to restart the process? (y/n): ", str).lower()
-            if restart == "n":
-                print("Goodbye! Have a great day fam.")
-                break
+                restart = input("Do you want to restart the process? (y/n): ").lower()
+                if restart == "n":
+                    print("Goodbye! Have a great day fam.")
+                    self.save_user_info()
+                    self.save_users_data()
+                    break
 
-        self.save_user_info("user", {"Name": name})
-        self.save_user_info("calculator", self.user_info)
 
-# Create an instance of Financial_Calculator
 calculator = Financial_Calculator()
 calculator.financial_calculator()

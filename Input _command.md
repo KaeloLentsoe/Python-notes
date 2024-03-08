@@ -159,3 +159,76 @@ print("You are {} years old.\nNext year, you'll be {}.".format(age, age + 1))
 This example uses the `format` method to insert the value of `age` and `age + 1` into the string, with a newline between the sentences.
 
 These examples showcase the use of `\n` for creating newlines in different contexts, whether it's for displaying text in a formatted way, prompting user input, or creating multi-line strings.
+
+
+# Using Conditional Statements
+## if, else, and elif Statements
+
+In Python, `if`, `else`, and `elif` statements are used for conditional execution, allowing the program to make decisions based on different conditions. Let's elaborate on each of them and provide a practical example:
+
+### `if` Statement:
+The `if` statement is used to check a condition, and if it is true, the indented block of code under the `if` statement is executed.
+
+```python
+age = 18
+
+if age >= 18:
+    print("You are an adult.")
+```
+
+In this example, if the value of `age` is greater than or equal to 18, the message "You are an adult." will be printed.
+
+### `else` Statement:
+The `else` statement is used in conjunction with an `if` statement to specify a block of code that should be executed when the `if` condition is false.
+
+```python
+age = 15
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+```
+
+If the value of `age` is less than 18, the message "You are a minor." will be printed.
+
+### `elif` Statement:
+The `elif` statement stands for "else if" and is used to check multiple conditions sequentially. It is useful when you have more than two possible outcomes.
+
+```python
+score = 75
+
+if score >= 90:
+    print("Excellent!")
+elif 80 <= score < 90:
+    print("Good job!")
+elif 70 <= score < 80:
+    print("You did okay.")
+else:
+    print("You need to improve.")
+```
+
+In this example, the program evaluates the score and prints different messages based on the score range.
+
+### Practical Example:
+
+Let's combine these statements in a practical example to determine the grading of a student based on their exam score:
+
+```python
+exam_score = float(input("Enter your exam score: "))
+
+if 90 <= exam_score <= 100:
+    grade = "A"
+elif 80 <= exam_score < 90:
+    grade = "B"
+elif 70 <= exam_score < 80:
+    grade = "C"
+elif 60 <= exam_score < 70:
+    grade = "D"
+else:
+    grade = "F"
+
+print("Your grade is:", grade)
+```
+
+In this example, the program prompts the user for their exam score, evaluates the score, and assigns a corresponding grade. The final grade is then printed.
