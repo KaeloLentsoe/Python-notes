@@ -317,3 +317,54 @@ while user_input.lower() != 'quit':
 This program uses a `while` loop to repeatedly prompt the user for input until they enter "quit."
 
 These examples illustrate the basic use of `for` and `while` loops in Python. Loops are powerful constructs that allow you to efficiently repeat code, and they play a crucial role in many programming tasks.
+
+## More example
+
+Sure, let's delve into a more practical example using a `for` loop to calculate the factorial of a number and a `while` loop to create a simple guessing game.
+
+### Practical Example 1: Calculating Factorial with a `for` Loop
+
+```python
+def calculate_factorial(n):
+    factorial = 1
+
+    for i in range(1, n + 1):
+        factorial *= i
+
+    return factorial
+
+number = int(input("Enter a number to calculate its factorial: "))
+result = calculate_factorial(number)
+print(f"The factorial of {number} is {result}.")
+```
+
+In this example, the program prompts the user to input a number, and then it calculates the factorial of that number using a `for` loop. The `range(1, n + 1)` ensures that the loop iterates from 1 to the given number (inclusive).
+
+### Practical Example 2: Guessing Game with a `while` Loop
+
+```python
+import random
+
+secret_number = random.randint(1, 10)
+attempts = 0
+max_attempts = 3
+
+print("Welcome to the Guessing Game! Try to guess the secret number between 1 and 10.")
+
+while attempts < max_attempts:
+    guess = int(input("Enter your guess: "))
+
+    if guess == secret_number:
+        print(f"Congratulations! You guessed the secret number {secret_number}.")
+        break
+    else:
+        print("Try again!")
+        attempts += 1
+
+if attempts == max_attempts:
+    print(f"Sorry, you've run out of attempts. The secret number was {secret_number}.")
+```
+
+In this example, the program generates a random secret number between 1 and 10. The user has up to three attempts to guess the number. The `while` loop continues until the user guesses the correct number or exhausts all attempts.
+
+These practical examples demonstrate how loops can be used for real-world scenarios, such as calculations and interactive games. Loops provide a way to efficiently handle repetitive tasks and create more dynamic and interactive programs.
