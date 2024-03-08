@@ -1,2 +1,14 @@
 Bond: Principal: 60000.0, Interest Rate: 0.003541666666666667, Months: 24.0
 Investment: Principal: 2000.0, Interest Rate: 0.011666666666666667, Time: 36.0, Type: compound 
+User Details:
+Name: kaelo 
+Calculator Details:
+Bond: {'Principal': 223.0, 'Interest Rate': 0.0022222222222222222, 'Months': 473.0}
+User Details:
+Name: kaelo 
+Calculator Details:
+Bond: {'Principal': 3000.0, 'Interest Rate': 0.00020833333333333335, 'Months': 403.0}
+User Details for kaelo:
+Name: kaelo
+Calculator Details for kaelo:
+Investment: {'Principal': 233.0, 'Interest Rate': 1.8616666666666666, 'Time': 34.0, 'Type': 'simple '}

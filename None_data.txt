@@ -1,0 +1,1 @@
+Investment: Principal: 234.0, Interest Rate: 0.0016666666666666668, Time: 3.0, Type: compound 
