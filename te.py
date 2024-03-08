@@ -1,17 +1,9 @@
-exam_score = float(input("Enter your exam score: "))
-
-if 90 <= exam_score <= 100:
-    grade = "A"
-elif 80 <= exam_score < 90:
-    grade = "B"
-elif 70 <= exam_score < 80:
-    grade = "C"
-elif 60 <= exam_score < 70:
-    grade = "D"
-else:
-    grade = "F"
-
-print("Your grade is:", grade)
+avalue= float(input('Enter an float greater than 10:'))
+if avalue>10:
+    print('Thank you')
+    avalue=avalue/2
+    print('This is your value divided by 2: ', avalue)
+print('Did your if code execute?') 
 
 
 
