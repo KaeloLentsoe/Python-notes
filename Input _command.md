@@ -368,3 +368,48 @@ if attempts == max_attempts:
 In this example, the program generates a random secret number between 1 and 10. The user has up to three attempts to guess the number. The `while` loop continues until the user guesses the correct number or exhausts all attempts.
 
 These practical examples demonstrate how loops can be used for real-world scenarios, such as calculations and interactive games. Loops provide a way to efficiently handle repetitive tasks and create more dynamic and interactive programs.
+
+
+# Break", "Continue", and "Pass" StatementsPage
+
+In Python, the `break`, `continue`, and `pass` statements are control flow statements that are used within loops and conditional statements to control the flow of the program.
+
+1. **`break` Statement:**
+   The `break` statement is used to exit a loop prematurely. When a `break` statement is encountered inside a loop (for loop, while loop, or nested loops), the loop is immediately terminated, and the program continues with the next statement after the loop.
+
+   ```python
+   for i in range(5):
+       if i == 3:
+           break
+       print(i)
+   ```
+
+   In this example, the loop will print numbers from 0 to 2, and when `i` becomes 3, the `break` statement is executed, and the loop is terminated.
+
+2. **`continue` Statement:**
+   The `continue` statement is used to skip the rest of the code inside a loop for the current iteration and move on to the next iteration of the loop.
+
+   ```python
+   for i in range(5):
+       if i == 2:
+           continue
+       print(i)
+   ```
+
+   In this example, the loop will print numbers from 0 to 4, skipping the iteration where `i` is equal to 2 because of the `continue` statement.
+
+3. **`pass` Statement:**
+   The `pass` statement is a no-operation statement. It is used when a statement is syntactically required but no action is desired or needed. It is often used as a placeholder in situations where some code is expected but not yet implemented.
+
+   ```python
+   for i in range(3):
+       # Some condition that needs handling
+       if i == 1:
+           pass
+       else:
+           print(i)
+   ```
+
+   In this example, the `pass` statement is used to indicate that no action is taken when `i` is equal to 1. The loop will print 0 and 2.
+
+These statements are particularly useful in controlling the flow of loops and handling specific conditions within the loop body. They provide flexibility in designing loop behavior based on certain conditions and requirements.
