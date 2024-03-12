@@ -1,4 +1,4 @@
-#  Input and flow control statement
+#  Input and flow control statement 
 ## INPUT COMMAND/A BUILT-IN FUNCTION 
 
 In Python, a built-in function is a function that is part of the core Python language and is available for use without the need for importing any external modules. Here are some commonly used built-in functions in Python:
