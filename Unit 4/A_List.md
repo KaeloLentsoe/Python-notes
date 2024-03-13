@@ -381,4 +381,58 @@ The `for` loop is used to iterate over a sequence (such as a list, tuple, string
     3 is in the list
     ```
 
-`for` loops combined with `in` are fundamental constructs in Python for iterating over sequences and performing various operations on each element. They provide a clean and concise way to work with collections of data.
+*`for` loops combined with `in` are fundamental constructs in Python for iterating over sequences and performing various operations on each element. They provide a clean and concise way to work with collections of data.*
+
+# Range
+
+The `range()` function is used to generate a sequence of numbers. It's commonly used with `for` loops to iterate a specific number of times or to generate indices for accessing elements in a sequence. 
+- The `range()` function can accept one, two, or three arguments:
+
+1. **`range(stop)`**: Generates numbers from 0 up to, but not including, the specified stop value.
+
+    ```python
+    for i in range(5):
+        print(i)
+    ```
+
+    Output:
+    ```
+    0
+    1
+    2
+    3
+    4
+    ```
+
+2. **`range(start, stop)`**: Generates numbers from the start value up to, but not including, the stop value.
+
+    ```python
+    for i in range(2, 6):
+        print(i)
+    ```
+
+    Output:
+    ```
+    2
+    3
+    4
+    5
+    ```
+
+3. **`range(start, stop, step)`**: Generates numbers from the start value up to, but not including, the stop value, incrementing by the step value.
+
+    ```python
+    for i in range(1, 10, 2):
+        print(i)
+    ```
+
+    Output:
+    ```
+    1
+    3
+    5
+    7
+    9
+    ```
+
+*`range()` objects are often used in combination with `for` loops to perform iterative tasks. They're also useful for generating indices when iterating over lists, strings, or other sequences. It's important to note that `range()` itself does not return a list, but rather a range object that behaves like a list of numbers when used in iterations. If you need a list, you can explicitly convert the range to a list using the `list()` function.*
