@@ -498,7 +498,7 @@ Count: 5
 In this example, the loop continues indefinitely (`while True`), but the `continue` statement skips printing when `count` is 3. The loop terminates when `count` reaches 5 due to the `break` statement.
 
 
-## More examples examples demonstrating the use of `while` loops with `break` and `continue` statements:
+## More examples demonstrating the use of `while` loops with `break` and `continue` statements:
 
 1. **Printing Even Numbers Up to a Limit**:
 
