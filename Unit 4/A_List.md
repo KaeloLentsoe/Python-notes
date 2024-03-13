@@ -571,3 +571,73 @@ else:
 ```
 
 *These examples illustrate different scenarios where `while` loops, along with `break` and `continue` statements, provide flexibility and control flow in Python programs.*
+
+# List Methods
+### Let's expand on each of the mentioned list methods with examples:
+
+1. **`append(elem)`**: Adds a single element to the end of the list.
+
+    ```python
+    my_list = [1, 2, 3]
+    my_list.append(4)
+    print(my_list)  # Output: [1, 2, 3, 4]
+    ```
+
+2. **`insert(index, elem)`**: Inserts the element at the given index, shifting elements to the right.
+
+    ```python
+    my_list = [1, 2, 4]
+    my_list.insert(2, 3)
+    print(my_list)  # Output: [1, 2, 3, 4]
+    ```
+
+3. **`extend(list2)`**: Adds the elements in `list2` to the end of the list.
+
+    ```python
+    my_list = [1, 2, 3]
+    my_list.extend([4, 5])
+    print(my_list)  # Output: [1, 2, 3, 4, 5]
+    ```
+
+4. **`index(elem)`**: Searches for the given element from the start of the list and returns its index. Throws a `ValueError` if the element does not appear.
+
+    ```python
+    my_list = [1, 2, 3, 4, 5]
+    index = my_list.index(3)
+    print(index)  # Output: 2
+    ```
+
+5. **`remove(elem)`**: Searches for the first instance of the given element and removes it. Throws a `ValueError` if not present.
+
+    ```python
+    my_list = [1, 2, 3, 4, 5]
+    my_list.remove(3)
+    print(my_list)  # Output: [1, 2, 4, 5]
+    ```
+
+6. **`sort()`**: Sorts the list in place. 
+
+    ```python
+    my_list = [3, 1, 4, 2, 5]
+    my_list.sort()
+    print(my_list)  # Output: [1, 2, 3, 4, 5]
+    ```
+
+7. **`reverse()`**: Reverses the list in place.
+
+    ```python
+    my_list = [1, 2, 3]
+    my_list.reverse()
+    print(my_list)  # Output: [3, 2, 1]
+    ```
+
+8. **`pop(index)`**: Removes and returns the element at the given index. Returns the rightmost element if index is omitted.
+
+    ```python
+    my_list = [1, 2, 3, 4, 5]
+    popped_element = my_list.pop(2)
+    print(popped_element)  # Output: 3
+    print(my_list)  # Output: [1, 2, 4, 5]
+    ```
+
+These methods provide powerful tools for manipulating lists in Python, allowing you to add, remove, sort, and modify elements based on various criteria.
