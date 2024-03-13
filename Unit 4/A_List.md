@@ -496,3 +496,78 @@ Count: 5
 ```
 
 In this example, the loop continues indefinitely (`while True`), but the `continue` statement skips printing when `count` is 3. The loop terminates when `count` reaches 5 due to the `break` statement.
+
+
+# More examples examples demonstrating the use of `while` loops with `break` and `continue` statements:
+
+1. **Printing Even Numbers Up to a Limit**:
+
+```python
+limit = 10
+num = 0
+while num <= limit:
+    if num % 2 == 0:
+        print(num)
+    num += 1
+```
+
+Output:
+```
+0
+2
+4
+6
+8
+10
+```
+
+2. **Sum of Numbers Until a Negative Number is Entered**:
+
+```python
+total = 0
+while True:
+    num = int(input("Enter a number (negative to quit): "))
+    if num < 0:
+        break
+    total += num
+print("Sum of numbers:", total)
+```
+
+3. **Skipping Odd Numbers**:
+
+```python
+num = 0
+while num < 10:
+    num += 1
+    if num % 2 != 0:
+        continue
+    print(num)
+```
+
+Output:
+```
+2
+4
+6
+8
+10
+```
+
+4. **Password Validation** (Terminates after 3 failed attempts):
+
+```python
+password = "secret"
+attempts = 0
+while attempts < 3:
+    user_input = input("Enter the password: ")
+    if user_input == password:
+        print("Access granted!")
+        break
+    else:
+        print("Invalid password. Try again.")
+        attempts += 1
+else:
+    print("Too many failed attempts. Access denied.")
+```
+
+*These examples illustrate different scenarios where `while` loops, along with `break` and `continue` statements, provide flexibility and control flow in Python programs.*
