@@ -109,7 +109,7 @@ Lists are fundamental data structures in Python, offering flexibility and effici
 
 
 # Lists are mutable
-Certainly! In Python, lists are mutable, which means you can modify their elements after creation. This is in contrast to immutable data types like strings, where you cannot change individual characters once the string is created.
+In Python, lists are mutable, which means you can modify their elements after creation. This is in contrast to immutable data types like strings, where you cannot change individual characters once the string is created.
 
 The syntax for accessing elements of a list is similar to accessing characters of a string—it uses the bracket operator (`[]`). Inside the brackets, you specify the index of the element you want to access. Here's a bit more detail on how this works:
 
@@ -208,3 +208,177 @@ Here are some examples demonstrating slicing in Python:
     ```
 
 *Slicing is a versatile tool in Python that allows you to manipulate lists efficiently by selecting subsets of elements based on their indices. It is widely used in various programming scenarios, including data processing, algorithmic tasks, and more.*
+
+# List Methods
+
+In Python, lists come with a variety of built-in methods that allow you to perform various operations on lists efficiently. Here are some commonly used list methods:
+
+1. **append()**: Adds an element to the end of the list.
+
+    ```python
+    my_list = [1, 2, 3]
+    my_list.append(4)
+    print(my_list)  # Output: [1, 2, 3, 4]
+    ```
+
+2. **extend()**: Extends the list by appending elements from an iterable.
+
+    ```python
+    my_list = [1, 2, 3]
+    my_list.extend([4, 5, 6])
+    print(my_list)  # Output: [1, 2, 3, 4, 5, 6]
+    ```
+
+3. **insert()**: Inserts an element at a specified position.
+
+    ```python
+    my_list = [1, 2, 3]
+    my_list.insert(1, 1.5)
+    print(my_list)  # Output: [1, 1.5, 2, 3]
+    ```
+
+4. **remove()**: Removes the first occurrence of a specified value.
+
+    ```python
+    my_list = [1, 2, 3, 2]
+    my_list.remove(2)
+    print(my_list)  # Output: [1, 3, 2]
+    ```
+
+5. **pop()**: Removes the element at a specified position (or the last element if no index is specified) and returns it.
+
+    ```python
+    my_list = [1, 2, 3]
+    popped_element = my_list.pop(1)
+    print(my_list)  # Output: [1, 3]
+    print(popped_element)  # Output: 2
+    ```
+
+6. **index()**: Returns the index of the first occurrence of a specified value.
+
+    ```python
+    my_list = [1, 2, 3, 2]
+    index = my_list.index(2)
+    print(index)  # Output: 1
+    ```
+
+7. **count()**: Returns the number of occurrences of a specified value.
+
+    ```python
+    my_list = [1, 2, 3, 2]
+    count = my_list.count(2)
+    print(count)  # Output: 2
+    ```
+
+8. **sort()**: Sorts the list in ascending order (or descending if `reverse=True` is specified).
+
+    ```python
+    my_list = [3, 1, 2]
+    my_list.sort()
+    print(my_list)  # Output: [1, 2, 3]
+    ```
+
+9. **reverse()**: Reverses the elements of the list in place.
+
+    ```python
+    my_list = [1, 2, 3]
+    my_list.reverse()
+    print(my_list)  # Output: [3, 2, 1]
+    ```
+
+10. **clear()**: Removes all elements from the list.
+
+    ```python
+    my_list = [1, 2, 3]
+    my_list.clear()
+    print(my_list)  # Output: []
+    ```
+
+*These methods provide a convenient and efficient way to manipulate lists in Python. They are widely used in various programming tasks involving lists, such as data processing, algorithm implementation, and more.*
+
+
+# Using for & in
+
+The `for` loop is used to iterate over a sequence (such as a list, tuple, string, or dictionary) or any iterable object. The `in` keyword is used within the `for` loop to specify the sequence or iterable object to iterate over. Here's how `for` and `in` work together in Python:
+
+1. **Iterating Over Lists**:
+
+    ```python
+    my_list = [1, 2, 3, 4, 5]
+    for element in my_list:
+        print(element)
+    ```
+
+    Output:
+    ```
+    1
+    2
+    3
+    4
+    5
+    ```
+
+2. **Iterating Over Strings**:
+
+    ```python
+    my_string = "Hello"
+    for char in my_string:
+        print(char)
+    ```
+
+    Output:
+    ```
+    H
+    e
+    l
+    l
+    o
+    ```
+
+3. **Iterating Over a Range of Numbers**:
+
+    ```python
+    for i in range(5):
+        print(i)
+    ```
+
+    Output:
+    ```
+    0
+    1
+    2
+    3
+    4
+    ```
+
+4. **Iterating Over a Dictionary**:
+
+    ```python
+    my_dict = {'a': 1, 'b': 2, 'c': 3}
+    for key in my_dict:
+        print(key, my_dict[key])
+    ```
+
+    Output:
+    ```
+    a 1
+    b 2
+    c 3
+    ```
+
+5. **Using `in` with Conditional Statements**:
+
+    `in` can also be used to check if a value exists in a sequence.
+
+    ```python
+    my_list = [1, 2, 3, 4, 5]
+    if 3 in my_list:
+        print("3 is in the list")
+    ```
+
+    Output:
+    ```
+    3 is in the list
+    ```
+
+`for` loops combined with `in` are fundamental constructs in Python for iterating over sequences and performing various operations on each element. They provide a clean and concise way to work with collections of data.
