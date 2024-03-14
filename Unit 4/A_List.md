@@ -694,3 +694,78 @@ print(flattened)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
 *List comprehension allows you to write clear and concise code, making it easier to express complex operations on lists in a single line. It's a powerful tool in Python programming, and mastering it can greatly improve your coding efficiency and readability. Practice using list comprehension in various scenarios to become more proficient in its usage.*
+
+# The `sorted()` function and the `sort()` method
+
+Let's cover the sorting of lists, both with the `sorted()` function and the `sort()` method. We'll also discuss tuples in Python.
+
+### Sorting Lists
+
+#### Using `sorted()` Function
+The `sorted()` function sorts a list without modifying the original list. It returns a new sorted list.
+
+Example:
+
+```python
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+sorted_list = sorted(my_list)
+print(sorted_list)  # Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+```
+
+#### Using `sort()` Method
+The `sort()` method sorts the list in place, modifying the original list. It does not return a new list.
+
+Example:
+
+```python
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+my_list.sort()
+print(my_list)  # Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+```
+
+### Custom Sorting with `key=`
+
+The `key` parameter in both `sorted()` function and `sort()` method allows custom sorting based on a function that transforms each element before comparison.
+
+Example:
+
+```python
+my_list = ["apple", "banana", "cherry", "date", "elderberry"]
+custom_sorted_list = sorted(my_list, key=len)
+print(custom_sorted_list)  # Output: ['date', 'apple', 'banana', 'cherry', 'elderberry']
+```
+
+This sorts the list based on the length of each string.
+
+### Tuples
+
+A tuple is an immutable sequence of elements, typically used to store collections of heterogeneous data. Once a tuple is created, its elements cannot be changed or added. Tuples are defined using parentheses `()`.
+
+Example:
+
+```python
+my_tuple = (1, 2, 3, 4, 5)
+print(my_tuple)  # Output: (1, 2, 3, 4, 5)
+```
+
+Tuples are often used to represent fixed collections of items, like coordinates or data records. They support operations like indexing, slicing, and iteration, similar to lists.
+
+```python
+coordinates = (3, 4)
+x, y = coordinates
+print("x-coordinate:", x)  # Output: x-coordinate: 3
+print("y-coordinate:", y)  # Output: y-coordinate: 4
+```
+
+Tuples are also commonly returned by functions to represent multiple values returned together.
+
+```python
+def get_coordinates():
+    return (3, 4)
+
+coordinates = get_coordinates()
+print(coordinates)  # Output: (3, 4)
+```
+
+Tuples are immutable, meaning their elements cannot be changed after creation, making them suitable for situations where you want to ensure data integrity or prevent accidental modification.
+
