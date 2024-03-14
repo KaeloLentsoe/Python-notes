@@ -693,4 +693,4 @@ flattened = [num for row in matrix for num in row]
 print(flattened)  # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-List comprehension allows you to write clear and concise code, making it easier to express complex operations on lists in a single line. It's a powerful tool in Python programming, and mastering it can greatly improve your coding efficiency and readability. Practice using list comprehension in various scenarios to become more proficient in its usage.
+*List comprehension allows you to write clear and concise code, making it easier to express complex operations on lists in a single line. It's a powerful tool in Python programming, and mastering it can greatly improve your coding efficiency and readability. Practice using list comprehension in various scenarios to become more proficient in its usage.*
