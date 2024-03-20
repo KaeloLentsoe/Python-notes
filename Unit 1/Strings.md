@@ -181,3 +181,72 @@ Here are some common tasks and operations you can perform with strings in Python
     ```
 
 *These examples cover just a few of the many operations you can perform with strings in Python. Strings are powerful and flexible, making them essential for tasks ranging from simple text manipulation to more complex data processing and analysis.*
+
+
+
+# String formatting
+
+String formatting in Python allows you to create dynamic and expressive strings by incorporating variables, expressions, and values within the text. 
+There are several ways to format strings in Python, and I'll cover some of the commonly used methods.
+
+### 1. **String Concatenation:**
+   - You can concatenate strings and variables using the `+` operator.
+   ```python
+   name = "Alice"
+   age = 30
+   result = "My name is " + name + " and I am " + str(age) + " years old."
+   print(result)
+   # Output: My name is Alice and I am 30 years old.
+   ```
+
+### 2. **String Interpolation:**
+   - You can use the `%` operator for string interpolation.
+   ```python
+   name = "Bob"
+   age = 25
+   result = "My name is %s and I am %d years old." % (name, age)
+   print(result)
+   # Output: My name is Bob and I am 25 years old.
+   ```
+
+### 3. **Formatted String Literal (f-string):**
+   - Introduced in Python 3.6, f-strings provide a concise and readable way to embed expressions and variables within strings.
+   ```python
+   name = "Charlie"
+   age = 35
+   result = f"My name is {name} and I am {age} years old."
+   print(result)
+   # Output: My name is Charlie and I am 35 years old.
+   ```
+
+### 4. **`format()` Method:**
+   - The `format()` method provides a versatile way to format strings, allowing you to insert values into placeholders.
+   ```python
+   name = "David"
+   age = 40
+   result = "My name is {} and I am {} years old.".format(name, age)
+   print(result)
+   # Output: My name is David and I am 40 years old.
+   ```
+
+### 5. **Positional and Keyword Arguments in `format()`:**
+   - You can use positional and keyword arguments with the `format()` method for more control over the order of variables.
+   ```python
+   name = "Eva"
+   age = 45
+   result = "My name is {0} and I am {1} years old. I live in {city}.".format(name, age, city="New York")
+   print(result)
+   # Output: My name is Eva and I am 45 years old. I live in New York.
+   ```
+
+### 6. **Formatted String Method (f-string) with Expressions:**
+   - f-strings can include expressions within curly braces.
+   ```python
+   x = 5
+   y = 10
+   result = f"The sum of {x} and {y} is {x + y}."
+   print(result)
+   # Output: The sum of 5 and 10 is 15.
+   ```
+
+*String formatting is a powerful tool that helps create more readable and dynamic code. Choose the method that best fits your needs and the version of Python you are using. f-strings (formatted string literals) are generally recommended for their simplicity and readability when working with Python 3.6 and newer versions.*
