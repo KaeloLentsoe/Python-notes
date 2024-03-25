@@ -278,7 +278,7 @@ While operator precedence rules determine the default order of operations, it's 
 result = (a + b) * c - (d ** 2)  # Explicit use of parentheses
 ```
 
-In the expression above, parentheses ensure that addition and subtraction are performed before multiplication and exponentiation, respectively.
+**In the expression above, parentheses ensure that addition and subtraction are performed before multiplication and exponentiation, respectively.**
 
 Understanding and correctly applying operator precedence is crucial for writing accurate and predictable code in programming languages. Regularly referencing the precedence rules helps avoid errors and ensures the intended order of operations in complex expressions.
 
