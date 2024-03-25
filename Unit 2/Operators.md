@@ -227,11 +227,9 @@ In the example above, `result` will be `False` because the first condition `(x >
 
 Understanding and effectively using relational and logical operators are essential skills for writing conditional statements and controlling the flow of a program. They are commonly used in constructs like `if` statements, loops, and more to make decisions based on certain conditions.
 
-
-
 # Operator Precedence Summary:
 
-Let's expand on the summary of operator precedence, ordered from the highest to the lowest, encompassing arithmetic, relational, and logical operators.
+This is a summary of operator precedence, ordered from the highest to the lowest, encompassing arithmetic, relational, and logical operators.
 
 1. **Parentheses `( )`:**
    - Highest precedence.
